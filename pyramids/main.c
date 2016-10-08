@@ -86,12 +86,35 @@ void drawPyramidHalf() {
          printf("\n");
     }
 }
+void countLetter(){
+    char text[100];
+    char letterToCount;
+    int counter=0;
+    printf("Unesi koje cu slovo da brojim\n");
+    scanf(" %c", &letterToCount);
+    printf("Unesi string\n");
+    scanf("%s", text);
+    int sumaB=0;
+    char letter=text[0];
+    do
+    {
+        if (letter==letterToCount)
+        {
+            sumaB++;
+        }
+        counter++;
+        letter=text[counter];
+
+    }while(letter!='\0');
+    printf("Broj slova %c u stringu je %d\n", letterToCount, sumaB);
+}
+
 
 int main()
 {
     int stop = 0;
     while(stop == 0) {
-        drawEmptyPyramid();
+        countLetter();
         printf("Again? (Y/N):");
         char answer;
         scanf(" %c", &answer);
