@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1475940236 source:c:\users\kuroi\onedrive\documents\codeblocks\exercise\digitron\main.c
+	<stdio.h>
+	<stdlib.h>
+
